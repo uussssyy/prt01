@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		834E85832DE2CB01000BC501 /* Sub01View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834E85822DE2CB01000BC501 /* Sub01View.swift */; };
 		83C90D862DE1462300DEB551 /* prt01App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C90D852DE1462300DEB551 /* prt01App.swift */; };
 		83C90D882DE1462300DEB551 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C90D872DE1462300DEB551 /* ContentView.swift */; };
 		83C90D8A2DE1462A00DEB551 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C90D892DE1462A00DEB551 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		834E85822DE2CB01000BC501 /* Sub01View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sub01View.swift; sourceTree = "<group>"; };
 		83C90D822DE1462300DEB551 /* prt01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = prt01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C90D852DE1462300DEB551 /* prt01App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prt01App.swift; sourceTree = "<group>"; };
 		83C90D872DE1462300DEB551 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 				83C90D872DE1462300DEB551 /* ContentView.swift */,
 				83C90D892DE1462A00DEB551 /* Assets.xcassets */,
 				83C90D8B2DE1462A00DEB551 /* Preview Content */,
+				834E85822DE2CB01000BC501 /* Sub01View.swift */,
 			);
 			path = prt01;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83C90D882DE1462300DEB551 /* ContentView.swift in Sources */,
+				834E85832DE2CB01000BC501 /* Sub01View.swift in Sources */,
 				83C90D862DE1462300DEB551 /* prt01App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
