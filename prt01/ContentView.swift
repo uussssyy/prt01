@@ -69,12 +69,12 @@ struct ContentView: View {
                     TextField(
                         "test1",
                         text: $test1
-                    ).frame(width: 45, height: 30)
+                    ).keyboardType(.numberPad).frame(width: 45, height: 30)
                     Text(result1)
                     TextField(
                         "test2",
                         text: $test2
-                    ).frame(width: 45, height: 30)
+                    ).keyboardType(.numberPad).frame(width: 45, height: 30)
                     Text(result2)
                     Spacer()
                 }
@@ -90,12 +90,12 @@ struct ContentView: View {
                     TextField(
                         "test3",
                         text: $test3
-                    ).frame(width: 45, height: 30)
+                    ).keyboardType(.numberPad).frame(width: 45, height: 30)
                     Text(result3)
                     TextField(
                         "test4",
                         text: $test4
-                    ).frame(width: 45, height: 30)
+                    ).keyboardType(.numberPad).frame(width: 45, height: 30)
                     Text(result4)
                     Spacer()
                 }
