@@ -11,21 +11,17 @@ struct Sub01View: View {
     @Binding var isShowBView: Bool
     var body: some View {
         ZStack {
-            Color(.orange)
-                .edgesIgnoringSafeArea(.all)
             VStack {
-                Text("BView")
-                    .font(.largeTitle)
+                Text("Sub01View")
                 Button {
                     isShowBView = false
                 } label: {
                     Text("閉じる")
-                        .font(.largeTitle)
-                        .padding()
-                        .background(.green)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
                 }
+                .buttonStyle(BorderedButtonStyle())
+                .background(.green)
+                .foregroundColor(.white)
+                .cornerRadius(10)
             }
         }
     }
