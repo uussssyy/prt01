@@ -15,10 +15,10 @@ struct ContentView: View {
     @State private var test3: String = ""
     @State private var test4: String = ""
     
-    @State private var result1: String = ""
-    @State private var result2: String = ""
-    @State private var result3: String = ""
-    @State private var result4: String = ""
+    @State private var result1: String = "　"
+    @State private var result2: String = "　"
+    @State private var result3: String = "　"
+    @State private var result4: String = "　"
     
     @State var randArray1 = [Int.random(in: 1...10),Int.random(in: 1...10)]
     @State var randArray2 = [Int.random(in: 1...10),Int.random(in: 1...10)]
@@ -26,39 +26,76 @@ struct ContentView: View {
     var body: some View {
         ScrollView {
             let ansArray = [randArray1[0] * randArray2[0],randArray1[1] * randArray2[0],randArray1[0] * randArray2[1],randArray1[1] * randArray2[1]]
+            Text("keisanApp ver1")
             VStack {
                 HStack {
-                    Spacer()
-                    Text(String(randArray1[0]))
-                    Spacer()
-                    Text(String(randArray1[1]))
+                    Rectangle().frame(width: 70, height: 30)
+                    //Spacer()
+                    ZStack {
+                        Rectangle()
+                            .frame(width: 70, height: 30)
+                        Text(String(randArray1[0]))
+                            .foregroundColor(.white)
+                    }
+//                    VStack {
+//                        Text(String(randArray1[0]))
+//                            .foregroundColor(.white)
+//                            .padding()
+//                            .background(
+//                                Rectangle()
+//                                    .fill(.blue)
+//                            )
+//                    }
+                    //Text(String(randArray1[0]))
+                    //Spacer()
+                    ZStack {
+                        Rectangle()
+                            .frame(width: 70, height: 30)
+                        Text(String(randArray1[1]))
+                            .foregroundColor(.white)
+                    }
+                    //Text(String(randArray1[1]))
                     Spacer()
                 }
+                Spacer()
                 HStack {
-                    Text(String(randArray2[0]))
+                    ZStack {
+                        Rectangle()
+                            .frame(width: 70, height: 30)
+                        Text(String(randArray2[0]))
+                            .foregroundColor(.white)
+                    }
+                    //Text(String(randArray2[0]))
                     TextField(
                         "test1",
                         text: $test1
-                    )
+                    ).frame(width: 45, height: 30)
                     Text(result1)
                     TextField(
                         "test2",
                         text: $test2
-                    )
+                    ).frame(width: 45, height: 30)
                     Text(result2)
                     Spacer()
                 }
+                Spacer()
                 HStack {
-                    Text(String(randArray2[1]))
+                    ZStack {
+                        Rectangle()
+                            .frame(width: 70, height: 30)
+                        Text(String(randArray2[1]))
+                            .foregroundColor(.white)
+                    }
+                    //Text(String(randArray2[1]))
                     TextField(
                         "test3",
                         text: $test3
-                    )
+                    ).frame(width: 45, height: 30)
                     Text(result3)
                     TextField(
                         "test4",
                         text: $test4
-                    )
+                    ).frame(width: 45, height: 30)
                     Text(result4)
                     Spacer()
                 }
@@ -93,7 +130,7 @@ struct ContentView: View {
                     isShowBView = true
                 } label: {
                     Text("Sub01Viewへ")
-                }
+                }.buttonStyle(BorderedButtonStyle())
                 .sheet(isPresented: $isShowBView) {
                     Sub01View(isShowBView: $isShowBView)
                 }
@@ -102,8 +139,3 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
