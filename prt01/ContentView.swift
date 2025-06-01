@@ -101,22 +101,22 @@ struct ContentView: View {
                 }
                 Button(action: {
                     if ansArray[0] == Int(test1){
-                        result1 = "●"
+                        result1 = "⭕️"
                     }else{
                         result1 = "✖️"
                     }
                     if ansArray[1] == Int(test2){
-                        result2 = "●"
+                        result2 = "⭕️"
                     }else{
                         result2 = "✖️"
                     }
                     if ansArray[2] == Int(test3){
-                        result3 = "●"
+                        result3 = "⭕️"
                     }else{
                         result3 = "✖️"
                     }
                     if ansArray[3] == Int(test4){
-                        result4 = "●"
+                        result4 = "⭕️"
                     }else{
                         result4 = "✖️"
                     }
